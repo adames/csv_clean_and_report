@@ -1,4 +1,6 @@
 require 'csv'
+require 'rubygems'
+require 'bundler/setup'
 
 def impression_pixel_http_cleaner(csv_path)
 

@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+gem 'csv', '~> 0.1.0'
+gem 'json'
+gem 'timeout'
 
-# gem "rails"
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }

@@ -4,6 +4,8 @@ require 'pry'
 require 'json'
 require 'timeout'
 require 'net/http'
+require 'rubygems'
+require 'bundler/setup'
 
 def url_report(csv_path)
   number_ok = 0
