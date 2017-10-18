@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'url_report.rb'
+require 'impression_pixel_cleaner.rb'
+
+# This statement sets path to csv, or sets tactic.csv by default.
+csv_path = ARGV.empty? ? "tactic.csv" : ARGV[0]
+
+# This line ouputs the cleaned csv to the out.csv
+File.open("out.csv", "w") do |f|
+  f.write(impression_pixel_http_cleaner(csv_path))
+end
+
+url_report(csv_path)

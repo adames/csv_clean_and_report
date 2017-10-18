@@ -14,7 +14,7 @@ def impression_pixel_http_cleaner(csv_path)
 
   CSV.foreach(csv_path, *csv_read_settings) do |row|
 
-    # adds headers to array
+    # adds headers to new array
     if row.class == Array
       clean_csv_array << row.join(',')
       next

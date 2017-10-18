@@ -1,4 +1,8 @@
 require "bundler/setup"
+require 'url_report.rb'
+require 'impression_pixel_cleaner.rb'
+
+sample_csv = '../tactic_sample.csv'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

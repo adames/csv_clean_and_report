@@ -1,11 +1,8 @@
 require "spec_helper"
 
-RSpec.describe HowIStart do
+RSpec.describe CSVCleanAndReport do
   it "has a version number" do
-    expect(HowIStart::VERSION).not_to be nil
+    expect(CSVCleanAndReport::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
 end

@@ -37,7 +37,7 @@ def url_report(csv_path)
   puts "Summary"
   puts "Number OK: #{number_ok}"
   puts "Number Failed: #{failures.length}"
-  puts "Failures: \n#{failures}" if failures.empty? == false
+  puts "Failures: \n#{failures}" if !failures.empty?
 end
 
 def url_filler(url)
@@ -59,7 +59,7 @@ def url_success?(url)
       end
     }
   # This rescue is a bit too permissive. Possible improvements:
-    # parsing html better so it doesn't fail at URI conversion
+    # parsing html better so it never fails at URI conversion
     # more custom url filler to add dummy data of the type requested
   rescue
     return false
