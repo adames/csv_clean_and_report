@@ -1,5 +1,4 @@
 require "bundler/setup"
-require "url_reports_for_csv"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

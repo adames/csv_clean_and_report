@@ -1,6 +1,5 @@
 require 'csv'
 require 'uri'
-require 'pry'
 require 'json'
 require 'timeout'
 require 'net/http'
