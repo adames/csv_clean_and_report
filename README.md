@@ -5,5 +5,7 @@ In order to run, simply run the url_reports_for_csv file in the /bin folder. By 
 Please bundle install before you run to download proper versions of each dependency.
 
 To test, run `rake spec`.
+NOTE: testing might need changes with each commit.
 
-Coming soon: rake install will build and install url_reports_for_csv-0.1.0.gem into system gems
+TODO: rake install will build and install url_reports_for_csv-0.1.0.gem into system gems
+TODO: add rdocs
