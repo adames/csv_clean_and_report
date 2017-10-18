@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+
+require './impression_pixel_cleaner.rb'
+require './url_checker.rb'
+
+# This line sets path to csv, or sets tactic.csv by default.
+csv_path = ARGV.empty? ? "../tactic.csv" : ARGV[0]
+
+cleaned_csv = impression_pixel_http_cleaner(csv_path)
+ok_list = url_checker(csv_path)
